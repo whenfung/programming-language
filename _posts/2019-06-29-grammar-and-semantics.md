@@ -328,6 +328,22 @@ Knuth 在 1968 年提出了属性文法。
 
 在前面的例子中，实际类型是与 `<var>` 、`<expr>` 相关的综合属性，以及 id 的本质属性。期望类型是与 `<expr>` 相关的继承属性。
 
+我们完善前面的 BNF 产生式，得到如下
+
+```c
+<ass_stmt>-><var>=<expr>
+函数：<expr>.expected_type = <var>.actual_type    // 从左往右继承属性
+<expr> -> <var>[1] + <var>[2]
+函数：<expr>. actual_type = <var>[1].actual_type   // 自底向上综合属性
+谓词： <var>[1]. actual_type == <var>[2].actual_type
+      <expr>. expected_type == <expr>.actual_type
+<var> -> id
+函数：<var>.actual_type = id.actual_type          // 自底向上的综合属性
+     id.actual_type = lookup(符号表,id)           // 本质属性一开始就要声明
+```
+
+关于属性的判断的时候，自己的脑子里面要有一颗文法树。
+
 
 
 {{site.math}}
