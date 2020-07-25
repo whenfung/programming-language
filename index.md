@@ -1,6 +1,6 @@
-[archives](/) | [about me](https://professordeng.github.io/about)
+[首页](/) | [目录]({{site.baseurl}}) | [资源]({{site.baseurl}}/resources)
 
-## list of articles
+---
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y' " %}
 {% for group in posts_by_year %}
