@@ -1,6 +1,15 @@
-title: program language
+title: Programming Language
 url: https://professordeng.github.io
 baseurl: /programming-language
-description: 邓文丰的个人博客
+description: Professordeng
+img: /programming-language/img                           # 图片路径
+
+# 插件
+plugins:
+  - jekyll-feed                           # 订阅插件
+  - jekyll-sitemap                        # 站点地图
+  - jemoji                                # GitHub 表情
+  - jekyll-avatar                         # GitHub 头像
+  - jekyll-mentions                       # GitHub 提名
 
 math: "<script type=\"text/x-mathjax-config\">MathJax.Hub.Config({tex2jax: {inlineMath: [ ['$','$'] ]}});</script><script src=\"//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML\"></script>"
