@@ -1,6 +1,0 @@
-title: program language
-url: https://professordeng.github.io
-baseurl: /programming-language
-description: 邓文丰的个人博客
-
-math: "<script type=\"text/x-mathjax-config\">MathJax.Hub.Config({tex2jax: {inlineMath: [ ['$','$'] ]}});</script><script src=\"//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML\"></script>"
